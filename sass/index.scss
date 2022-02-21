@@ -1,0 +1,41 @@
+@import 'variables';
+
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+.first-section{
+    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient($introGradient1, $introGradient2);
+    background-size: 220%;
+    background-repeat: no-repeat;
+    background-position: bottom 47.9% right 74.7%;
+    border-bottom-left-radius: 100px;
+    height: 68vh;
+
+    .nav-desktop{
+        align-items: center;
+        display: flex;
+        padding-top: 62px;
+        width: 100%;
+
+        .logo{
+            padding-left: 169px;
+        }
+
+        .nav-items{
+            list-style-type: none;
+            display: flex;
+            padding-left: 60px;
+        }
+    }
+}

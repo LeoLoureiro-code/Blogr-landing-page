@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.first-section {
+  background-image: url(../images/bg-pattern-intro-desktop.svg), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(#ff8f70, #ff3d54);
+  background-size: 220%;
+  background-repeat: no-repeat;
+  background-position: bottom 47.9% right 74.7%;
+  border-bottom-left-radius: 100px;
+  height: 68vh;
+}
+
+.first-section .nav-desktop {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 62px;
+  width: 100%;
+}
+
+.first-section .nav-desktop .logo {
+  padding-left: 169px;
+}
+
+.first-section .nav-desktop .nav-items {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 60px;
+}
+/*# sourceMappingURL=index.css.map */
