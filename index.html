@@ -5,92 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="sass/index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 
 <body>
-  <div class="logo">
-    <img src="./images/" alt="">
-  </div>
   <nav class="nav-mobile">
-    <ul class="nav-items">
-      <li class="nav-item">
-        <details>
-          <summary>
-            Product
-          </summary>
-          <div class="product-details">
-            <ul>
-              <li class="products">
-                Overview
-              </li>
-              <li class="products">
-                Pricing
-              </li>
-              <li class="products">
-                Marketplace
-              </li>
-              <li class="products">
-                Features
-              </li>
-              <li class="products">
-                Integrations
-              </li>
-            </ul>
-          </div>
-        </details>
-      </li>
-      <li class="nav-item">
-        <details>
-          <summary>
-            Company
-          </summary>
-          <div class="company-details">
-            <ul>
-              <li class="company-detail">
-                About
-              </li>
-              <li class="company-detail">
-                Team
-              </li>
-              <li class="company-detail">
-                Blog
-              </li>
-              <li class="company-detail">
-                Careers
-              </li>
-            </ul>
-          </div>
-        </details>
-      </li>
-      <li class="nav-item">
-        <details>
-          <summary>
-            Connect
-          </summary>
-          <div class="connect-details">
-            <ul>
-              <li class="connect">
-                Contact
-              </li>
-              <li class="connect">
-                Newsletter
-              </li>
-              <li class="connect">
-                LinkedIn
-              </li>
-            </ul>
-          </div>
-        </details>
-      </li>
-    </ul>
-    <div class="login-signup">
-      <button class="login">Login</button>
-      <button class="sign-up">Sign Up</button>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Blogr logo">
     </div>
-  </nav>
-  <nav class="nav-desktop">
     <ul class="nav-items">
       <li class="nav-item">
         <details>
@@ -168,7 +92,87 @@
     </div>
   </nav>
   <main>
-    <section>
+    <section class="first-section">
+      <nav class="nav-desktop">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Blogr logo">
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <details>
+              <summary class="summary-product">
+                Product <img src="./images/icon-arrow-light.svg" alt="arrow">
+              </summary>
+              <div class="product-details">
+                <ul>
+                  <li class="products">
+                    Overview
+                  </li>
+                  <li class="products">
+                    Pricing
+                  </li>
+                  <li class="products">
+                    Marketplace
+                  </li>
+                  <li class="products">
+                    Features
+                  </li>
+                  <li class="products">
+                    Integrations
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="nav-item">
+            <details>
+              <summary class="summary-company">
+                Company <img src="./images/icon-arrow-light.svg" alt="arrow">
+              </summary>
+              <div class="company-details">
+                <ul>
+                  <li class="company-detail">
+                    About
+                  </li>
+                  <li class="company-detail">
+                    Team
+                  </li>
+                  <li class="company-detail">
+                    Blog
+                  </li>
+                  <li class="company-detail">
+                    Careers
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="nav-item">
+            <details>
+              <summary class="summary-connect">
+                Connect <img src="./images/icon-arrow-light.svg" alt="arrow">
+              </summary>
+              <div class="connect-details">
+                <ul>
+                  <li class="connect">
+                    Contact
+                  </li>
+                  <li class="connect">
+                    Newsletter
+                  </li>
+                  <li class="connect">
+                    LinkedIn
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ul>
+        <div class="login-signup">
+          <a href="#" class="login">Login</a>
+          <button class="sign-up">Sign Up</button>
+        </div>
+      </nav>
       <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
       <div class="start-learn">
@@ -176,25 +180,28 @@
         <button class="learn">Learn More</button>
       </div>
     </section>
-    <section>
+    <section class="intro-section">
       <h2>Designed for the future</h2>
-      <div class="intro-info">
-        <h3>Introducing an extensible editor</h3>
-        <p>
-          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-          change the looks of a blog.
-        </p>
-        <h3>Robust content management</h3>
-        <p>
-          Flexible content management enables users to easily move through posts. Increase the usability of your blog
-          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-        </p>
+      <div class="intro">
+        <div class="intro-info">
+          <h3>Introducing an extensible editor</h3>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            change the looks of a blog.
+          </p>
+          <h3>Robust content management</h3>
+          <p>
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="./images/illustration-editor-desktop.svg" alt="">
+        </div>
       </div>
-      <div class="intro-img">
-        <img src="" alt="">
-      </div>
+      
     </section>
     <section>
       <div class="infra">
