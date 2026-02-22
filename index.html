@@ -1,279 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="sass/index.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | [Blogr]</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Blogr Landing Page Main</title>
 </head>
 
 <body>
-  <nav class="nav-mobile">
-    <div class="logo">
-      <img src="./images/logo.svg" alt="Blogr logo">
-    </div>
-    <ul class="nav-items">
-      <li class="nav-item">
-        <details>
-          <summary>
-            Product
-          </summary>
-          <div class="product-details">
-            <ul>
-              <li class="products">
-                Overview
-              </li>
-              <li class="products">
-                Pricing
-              </li>
-              <li class="products">
-                Marketplace
-              </li>
-              <li class="products">
-                Features
-              </li>
-              <li class="products">
-                Integrations
-              </li>
-            </ul>
-          </div>
-        </details>
-      </li>
-      <li class="nav-item">
-        <details>
-          <summary>
-            Company
-          </summary>
-          <div class="company-details">
-            <ul>
-              <li class="company-detail">
-                About
-              </li>
-              <li class="company-detail">
-                Team
-              </li>
-              <li class="company-detail">
-                Blog
-              </li>
-              <li class="company-detail">
-                Careers
-              </li>
-            </ul>
-          </div>
-        </details>
-      </li>
-      <li class="nav-item">
-        <details>
-          <summary>
-            Connect
-          </summary>
-          <div class="connect-details">
-            <ul>
-              <li class="connect">
-                Contact
-              </li>
-              <li class="connect">
-                Newsletter
-              </li>
-              <li class="connect">
-                LinkedIn
-              </li>
-            </ul>
-          </div>
-        </details>
-      </li>
-    </ul>
-    <div class="login-signup">
-      <button class="login">Login</button>
-      <button class="sign-up">Sign Up</button>
-    </div>
-  </nav>
-  <main>
-    <section class="first-section">
-      <nav class="nav-desktop">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="Blogr logo">
-        </div>
-        <ul class="nav-items">
+  <header>
+    <div class="header-top">
+      <a href="" class="logo">
+        <img src="images/logo.svg" alt="Blogr logo">
+      </a>
+      <nav>
+        <ul class="nav-list">
           <li class="nav-item">
-            <details>
-              <summary class="summary-product">
-                Product <img src="./images/icon-arrow-light.svg" alt="arrow">
-              </summary>
-              <div class="product-details">
-                <ul>
-                  <li class="products">
-                    Overview
-                  </li>
-                  <li class="products">
-                    Pricing
-                  </li>
-                  <li class="products">
-                    Marketplace
-                  </li>
-                  <li class="products">
-                    Features
-                  </li>
-                  <li class="products">
-                    Integrations
-                  </li>
-                </ul>
-              </div>
-            </details>
+            <button class="nav-button" aria-expanded="false" aria-haspopup="true">
+              Product
+            </button>
+            <ul class="dropdown-menu" hidden>
+              <li><a href="/">Overview</a></li>
+              <li><a href="/">Pricing</a></li>
+              <li><a href="/">Marketplace</a></li>
+              <li><a href="/">Features</a></li>
+              <li><a href="" class="">Integrations</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <details>
-              <summary class="summary-company">
-                Company <img src="./images/icon-arrow-light.svg" alt="arrow">
-              </summary>
-              <div class="company-details">
-                <ul>
-                  <li class="company-detail">
-                    About
-                  </li>
-                  <li class="company-detail">
-                    Team
-                  </li>
-                  <li class="company-detail">
-                    Blog
-                  </li>
-                  <li class="company-detail">
-                    Careers
-                  </li>
-                </ul>
-              </div>
-            </details>
+            <button class="nav-button" aria-expanded="false" aria-haspopup="true">
+              Company
+            </button>
+            <ul class="dropdown-menu" hidden>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Team</a></li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Careers</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <details>
-              <summary class="summary-connect">
-                Connect <img src="./images/icon-arrow-light.svg" alt="arrow">
-              </summary>
-              <div class="connect-details">
-                <ul>
-                  <li class="connect">
-                    Contact
-                  </li>
-                  <li class="connect">
-                    Newsletter
-                  </li>
-                  <li class="connect">
-                    LinkedIn
-                  </li>
-                </ul>
-              </div>
-            </details>
+            <button class="nav-button" aria-expanded="false" aria-haspopup="true">
+              Connect
+            </button>
+            <ul class="dropdown-menu" hidden>
+              <li><a href="/">Contact</a></li>
+              <li><a href="/">Newsletter</a></li>
+              <li><a href="/">LinkedIn</a></li>
+            </ul>
           </li>
         </ul>
         <div class="login-signup">
-          <a href="#" class="login">Login</a>
-          <button class="sign-up">Sign Up</button>
+          <a href="/" class="login-anchor">Login</a>
+          <a href="/" class="signup-anchor">Sign Up</a>
         </div>
       </nav>
+    </div>
+
+    <div class="hero">
       <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
-      <div class="start-learn">
-        <button class="start">Start for Free</button>
-        <button class="learn">Learn More</button>
+      <p class="introduction-paragraph">Grow your audience and build your online brand</p>
+      <div class="introduction-links-div">
+        <a href="/" class="introduction-anchor">Start for Free</a>
+        <a href="/" class="introduction-anchor">Learn More</a>
       </div>
-    </section>
-    <section class="intro-section">
+    </div>
+  </header>
+
+  <main>
+    <section class="features-section">
       <h2>Designed for the future</h2>
-      <div class="intro">
-        <div class="intro-info">
+      <div class="features-img"></div>
+      <div class="features-info">
+        <div class="editor-info">
           <h3>Introducing an extensible editor</h3>
-          <p>
+          <p class="editor-paragraph">
             Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
             The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
             videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
             change the looks of a blog.
           </p>
+        </div>
+        <div class="content-management-info">
           <h3>Robust content management</h3>
-          <p>
+          <p class="content-management-paragraph">
             Flexible content management enables users to easily move through posts. Increase the usability of your blog
             by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
           </p>
         </div>
-        <div class="intro-img">
-          <img src="./images/illustration-editor-desktop.svg" alt="">
-        </div>
-      </div>
-      
-    </section>
-    <section>
-      <div class="infra">
-        <div class="infra-img">
-          <img src="" alt="">
-        </div>
-        <div class="infra-info">
-          <h2>State of the Art Infrastructure</h2>
-          <p>
-            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-          </p>
-        </div>
       </div>
     </section>
-    <section>
-      <div class="features">
-        <div class="features-img">
-          <img src="" alt="">
-        </div>
-        <div class="features-info">
-          <h3> Free, open, simple</h3>
-          <p>
+    <section class="data-center-section">
+      <div class="data-center-img"></div>
+      <h2>State of the Art Infrastructure</h2>
+      <p class="data-center-paragraph">
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </p>
+    </section>
+    <section class="characteristics-section">
+      <div class="characteristics-img"></div>
+      <div class="characteristics-info">
+        <div class="open-source-info">
+          <h3>Free, open, simple</h3>
+          <p class="open-source-paragraph">
             Blogr is a free and open source application backed by a large community of helpful developers. It supports
             features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
             tools,
             and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
           </p>
+        </div>
+        <div class="tooling-info">
           <h3>Powerful tooling</h3>
-          <p>
-            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-            but
+          <p class="tooling-paragraph">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+            breeze, but
             capable of producing even the most complicated sites.
           </p>
         </div>
       </div>
     </section>
   </main>
-<footer>
-  <img src="" alt="">
-  <div class="footer-product">
-    <p>Product</p>
-    <ul>
-      <li>Overview</li>
-      <li>Pricing</li>
-      <li>Marketplace</li>
-      <li>Features</li>
-      <li>Integrations</li>
-    </ul>
-  </div>
-  <div class="footer-company">
-    <p>Company</p>
-    <ul>
-      <li>About</li>
-      <li>Team</li>
-      <li>Blog</li>
-      <li>Careers</li>
-    </ul>
-  </div>
-  <div class="footer-connect">
-    <p>Connect</p>
-    <ul>
-      <li>Contact</li>
-      <li>Newsletter</li>
-      <li>LinkedIn</li>
-    </ul>
-  </div>
-</footer>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <footer>
+    <div class="footer-container">
+      <a href="/" class="footer-logo">
+        <img src="images/logo.svg" alt="Blogr logo">
+      </a>
+      <nav class="footer-nav" aria-label="footer navigation">
+        <ul>
+          <li>
+            <h4>Product</h4>
+            <ul class="product-list">
+              <li><a href="/">Overview</a></li>
+              <li><a href="/">Pricing</a></li>
+              <li><a href="/">Marketplace</a></li>
+              <li><a href="/">Features</a></li>
+              <li><a href="/">Integrations</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Company</h4>
+            <ul class="company-list">
+              <li><a href="/">About</a></li>
+              <li><a href="/">Team</a></li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Connect</h4>
+            <ul class="connect-list">
+              <li><a href="/">Contact</a></li>
+              <li><a href="/">Newsletter</a></li>
+              <li><a href="/">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
-
 </html>
