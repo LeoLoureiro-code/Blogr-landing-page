@@ -1,0 +1,105 @@
+:root{
+    /*Primary*/
+
+    /*CTA text*/
+    --light-red: hsl(356, 100%, 66%);
+    /*CTA hover background*/
+    --very-light-red: hsl(355, 100%, 74%);
+    /*headings*/
+    --very-dark-blue: hsl(208, 49%, 24%);
+
+
+    /*Neutral*/
+
+    /*text*/
+    --white: hsl(0, 0%, 100%);
+    /*footer text*/
+    --graydish-blue: hsl(240, 2%, 79%);
+    /*body copy*/
+    --very-dark-grayish-blue: hsl(207, 13%, 34%);
+    /*footer background*/
+    --very-dark-black-blue: hsl(240, 10%, 16%);
+
+
+     /*Gradient*/
+
+     /*Background gradient - Intro/CTA mobile nav:*/
+     --very-light-gray: hsl(13, 100%, 72%);
+     --light-red: hsl(353, 100%, 62%);
+     /*Background gradient - body*/
+     --very-dark-gray-blue: hsl(237, 17%, 21%);
+     --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+     /*Typography*/
+    --font-family-overpass: "Overpass", sans-serif;
+    --font-family-ubuntu: "Ubuntu", sans-serif;
+}
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white);
+}
+
+/*Header*/
+
+header{
+    background-image: linear-gradient(hsla(13, 100%, 72%, 0.8), hsla(353, 100%, 62%, 0.8)), url(images/bg-pattern-intro-mobile.svg);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding: 3.5rem 1.5rem;
+}
+
+.logo-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 5.1rem;
+}
+
+.logo-img{
+    width: 100%;
+    height: auto;
+}
+
+
+nav{
+    display: none;
+}
+
+.login-signup{
+    display: none;
+}
+
+.hero{
+    margin-top: 6.7rem;
+}
+
+h1{
+    color: var(--white);
+    font-family: var(--font-family-overpass);
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.introduction-paragraph{
+    color: var(--white);
+    font-family: var(--font-family-overpass);
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 0.95rem;
+    text-align: center;
+    padding: 0 0.5rem;
+}
