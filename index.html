@@ -7,20 +7,29 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <title>Blogr Landing Page Main</title>
 </head>
 
 <body>
   <header>
     <div class="header-top">
-      <a href="" class="logo">
-        <img src="images/logo.svg" alt="Blogr logo">
-      </a>
-      <nav>
+      <div class="logo-navigation">
+        <a href="#" class="logo">
+        <img src="images/logo.svg" alt="Blogr logo" class="logo-img">
+        </a>
+        <img src="images/icon-hamburger.svg" alt="hamburger icon">
+        <nav>
         <ul class="nav-list">
           <li class="nav-item">
             <button class="nav-button" aria-expanded="false" aria-haspopup="true">
-              Product
+              Product 
+              <img src="images/icon-arrow-dark.svg" alt="icon arrow down">
             </button>
             <ul class="dropdown-menu" hidden>
               <li><a href="/">Overview</a></li>
@@ -33,6 +42,7 @@
           <li class="nav-item">
             <button class="nav-button" aria-expanded="false" aria-haspopup="true">
               Company
+              <img src="images/icon-arrow-dark.svg" alt="icon arrow down">
             </button>
             <ul class="dropdown-menu" hidden>
               <li><a href="/">About</a></li>
@@ -44,6 +54,7 @@
           <li class="nav-item">
             <button class="nav-button" aria-expanded="false" aria-haspopup="true">
               Connect
+              <img src="images/icon-arrow-dark.svg" alt="icon arrow down">
             </button>
             <ul class="dropdown-menu" hidden>
               <li><a href="/">Contact</a></li>
@@ -51,12 +62,13 @@
               <li><a href="/">LinkedIn</a></li>
             </ul>
           </li>
-        </ul>
+        </ul>  
         <div class="login-signup">
           <a href="/" class="login-anchor">Login</a>
           <a href="/" class="signup-anchor">Sign Up</a>
         </div>
       </nav>
+      </div>
     </div>
 
     <div class="hero">
