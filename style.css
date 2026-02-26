@@ -78,7 +78,6 @@ header{
     height: auto;
 }
 
-
 nav{
     display: none;
 }
@@ -146,3 +145,74 @@ h1{
     border: 1px solid var(--white);
     color: var(--white);
 }
+
+/*main*/
+
+main{
+    padding: 0 1.5rem;
+}
+
+/*features-section*/
+
+.features-section{
+    margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designed-title{
+    font-family: var(--font-family-overpass);
+    font-size: 1.6rem;
+}
+
+.features-img{
+    background-image:url(images/illustration-editor-mobile.svg), url(images/bg-pattern-circles.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20.375rem;
+    width: 100%;
+    max-width: 20.375rem;
+    margin-top: 3.1rem;
+}
+
+.editor-info{
+    margin-top: 3.1rem;
+}
+
+.editor-title{
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0 1.2rem;
+}
+
+.editor-paragraph{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.9rem;
+    line-height: 1.7rem;
+}
+
+.content-management-info{
+    margin-top: 2.9rem;
+}
+
+.content-management-title{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.content-management-paragraph{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.3rem;
+    line-height: 1.8rem;
+}
+
+/* .data-center-section{
+
+} */
