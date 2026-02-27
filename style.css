@@ -90,6 +90,10 @@ nav{
     margin-top: 6.7rem;
 }
 
+.features-section, .characteristics-section{
+    padding: 0 1.5rem;
+}
+
 h1{
     color: var(--white);
     font-family: var(--font-family-overpass);
@@ -149,7 +153,7 @@ h1{
 /*main*/
 
 main{
-    padding: 0 1.5rem;
+    
 }
 
 /*features-section*/
@@ -213,6 +217,17 @@ main{
     line-height: 1.8rem;
 }
 
-/* .data-center-section{
+/*Data center section*/
 
-} */
+.data-center-section{
+    margin-top: 16.5rem;
+    background-color: var(--very-dark-blue);
+}
+
+.data-center-img{
+    background-image: url(images/bg-pattern-circles.svg);
+    background-size: 150%;
+    background-position: 50% 90%;
+    height: 21.656rem;
+    width: 100%;
+}
