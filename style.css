@@ -78,7 +78,7 @@ header{
     height: auto;
 }
 
-nav{
+.header-nav{
     display: none;
 }
 
@@ -262,4 +262,38 @@ main{
     font-weight: 300;
     line-height: 1.7rem;
     margin-bottom: 7.2rem;
+}
+
+/*Characteristic section*/
+
+.characteristics-section{
+    margin-top: 5rem;
+}
+
+.characteristics-img{
+    background-image: url(images/illustration-laptop-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 20.5rem;
+    height: 20.38rem;
+}
+
+.characteristics-info{
+    margin-top: 3.2rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+.open-source-paragraph, .tooling-paragraph{
+    margin-top: 1.5rem;
+    padding: 0 0.8rem;
+    line-height: 1.8rem;
+}
+
+.open-source-paragraph{
+    margin-bottom: 2.3rem;
 }
