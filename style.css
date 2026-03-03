@@ -52,6 +52,10 @@ body{
     font-family: var(--font-family-overpass);
 }
 
+li{
+    list-style: none;
+}
+
 /*Header*/
 
 header{
@@ -268,6 +272,7 @@ main{
 
 .characteristics-section{
     margin-top: 5rem;
+    margin-bottom: 5.7rem;
 }
 
 .characteristics-img{
@@ -296,4 +301,72 @@ h3{
 
 .open-source-paragraph{
     margin-bottom: 2.3rem;
+}
+
+/*Footer*/
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-black-blue);
+    border-top-right-radius: 100px;
+    padding: 4.5rem 0;
+}
+
+.footer-logo{
+    height: 2.5rem;
+    width: 100%;
+    max-width: 6.3rem;
+}
+
+.footer-logo-img{
+    height: auto;
+    width: 100%;
+}
+
+h4{
+    color: var(--white);
+    font-size: 1.15rem;
+    text-align: center;
+     margin-bottom: 1.8rem;
+}
+
+.footer-nav{
+    margin-top: 5.3rem;
+}
+
+.footer-nav-link{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.product-list, .company-list, .connect-list{
+    margin-bottom: 3.2rem;
+}
+
+.product-list > li, .company-list > li, .connect-list >li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+}
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/*Laptop*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+}
+
+/*Desktop*/
+@media (min-width: 1280px) {
+  
 }
