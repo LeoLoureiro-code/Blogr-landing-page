@@ -162,6 +162,7 @@ main{
 
 /*features-section*/
 
+
 .features-section{
     margin-top: 6.5rem;
     display: flex;
@@ -172,8 +173,9 @@ main{
 
 .designed-title{
     font-family: var(--font-family-overpass);
-    font-size: 1.6rem;
-}
+    font-weight: 600;
+    font-size: clamp(1.6rem, 2rem, 2.1rem);
+} 
 
 .features-img{
     background-image:url(images/illustration-editor-mobile.svg), url(images/bg-pattern-circles.svg);
@@ -228,26 +230,30 @@ main{
     background-color: var(--very-dark-blue);
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
-    overflow: hidden;
     background-image: url(images/bg-pattern-circles.svg);
     background-size: 155%;
-    background-position: 50% -550%;
+    background-position: -100px -220px;
     background-repeat: no-repeat;
-
 }
 
 .data-center-img{
     width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 5rem;
 }
 
 .phone-ilustration{
     position: absolute;
-    transform: translateY(-47%);
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 23.5rem;
+    height: auto;
+    top: -187px;
 }
 
 .data-center-info-div{
-    margin-top: 14rem;
+    padding: 14rem 0 0.1rem 0;
 }
 
 .art-infraestructure-title{
@@ -258,7 +264,7 @@ main{
 }
 
 .data-center-paragraph{
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     text-align: center;
     color: var(--white);
     padding: 0 1.8rem;
@@ -294,7 +300,7 @@ h3{
 }
 
 .open-source-paragraph, .tooling-paragraph{
-    margin-top: 1.5rem;
+    margin-top: 1.7rem;
     padding: 0 0.8rem;
     line-height: 1.8rem;
 }
