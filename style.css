@@ -175,17 +175,19 @@ main{
     font-family: var(--font-family-overpass);
     font-weight: 600;
     font-size: clamp(1.6rem, 2rem, 2.1rem);
+    text-align: center;
 } 
 
-.features-img{
-    background-image:url(images/illustration-editor-mobile.svg), url(images/bg-pattern-circles.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20.375rem;
+.editor-picture{
+    display: block;
+    min-height: 20.3rem;
+    max-height: 55.1rem;
+}
+
+.illustration-editor-img{
     width: 100%;
-    max-width: 20.375rem;
-    margin-top: 3.1rem;
+    height: 100%;
+    object-fit: cover;
 }
 
 .editor-info{
@@ -281,13 +283,16 @@ main{
     margin-bottom: 5.7rem;
 }
 
-.characteristics-img{
-    background-image: url(images/illustration-laptop-mobile.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+.characteristics-picture{
+    display: block;
+    min-height: 20.3rem;
+    max-height: 55.1rem;
+}
+
+.illustration-laptop-img{
     width: 100%;
-    min-width: 20.5rem;
-    height: 20.38rem;
+    height: 100%;
+    object-fit: cover;
 }
 
 .characteristics-info{
@@ -364,15 +369,56 @@ h4{
 /*Tablet*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    header{
+    background-image:url(images/bg-pattern-intro-desktop.svg), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%)) ;
+    background-position: 30% 54%;
+    }
+
+    .designed-title{
+        margin-bottom: 3rem;
+    }
   
+    .editor-picture{
+        width: 43rem;
+    }
+
+    .features-section, .characteristics-section, .data-center-paragraph{
+        padding: 0 6.25rem;
+    }
+
+    .footer-container{
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        padding: 4.5rem 3.5rem;
+    }
+
+    .footer-nav{
+        margin-top: 0;
+        min-width: 28.8rem;
+    }
+    
+    nav > ul{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        
+    }
 }
 
 /*Laptop*/
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) {
 
-}
+    #hamburger-icon{
+        display: none;
+    }
 
-/*Desktop*/
-@media (min-width: 1280px) {
-  
+    .header-nav, .login-signup{
+        display: flex;
+    }
+    
+    main{
+
+    }
 }
