@@ -21,7 +21,8 @@
         <a href="#" class="logo">
         <img src="images/logo.svg" alt="Blogr logo" class="logo-img">
         </a>
-        <img src="images/icon-hamburger.svg" alt="hamburger icon">
+        <img src="images/icon-hamburger.svg" id="hamburger-icon" alt="hamburger icon">
+        <div class="nav-login">
         <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
@@ -66,6 +67,7 @@
           <a href="/" class="login-anchor">Login</a>
           <a href="/" class="signup-anchor">Sign Up</a>
       </div>
+        </div>
       </div>
     </div>
 
@@ -82,7 +84,12 @@
   <main>
     <section class="features-section">
       <h2 class="designed-title">Designed for the future</h2>
-      <div class="features-img"></div>
+      <div class="features-img">
+        <picture class="editor-picture">
+          <source media="(min-width: 1024px)" srcset="images/illustration-editor-desktop.svg">
+          <img src="images/illustration-editor-mobile.svg" class="illustration-editor-img" alt="A drawing">
+        </picture>
+      </div>
       <div class="features-info">
         <div class="editor-info">
           <h3 class="editor-title">Introducing an extensible editor</h3>
@@ -115,7 +122,10 @@
       </div>
     </section>
     <section class="characteristics-section">
-      <div class="characteristics-img"></div>
+      <picture class="characteristics-picture">
+        <source media="(min-width: 1024px)" srcset="images/illustration-laptop-desktop.svg">
+          <img src="images/illustration-laptop-mobile.svg" class="illustration-laptop-img" alt="A laptop">
+      </picture>
       <div class="characteristics-info">
         <div class="open-source-info">
           <h3>Free, open, simple</h3>
@@ -175,5 +185,6 @@
       </nav>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
