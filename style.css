@@ -97,7 +97,7 @@ header{
 h1{
     color: var(--white);
     font-family: var(--font-family-overpass);
-    font-size: 2.3rem;
+    font-size: clamp(2.3rem, 4.7vw, 5.5rem);
     font-weight: 600;
     letter-spacing: -1px;
     text-align: center;
@@ -108,7 +108,7 @@ h1{
     color: var(--white);
     font-family: var(--font-family-overpass);
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
     margin-top: 0.95rem;
     text-align: center;
     padding: 0 0.5rem;
@@ -170,7 +170,7 @@ main{
 .designed-title{
     font-family: var(--font-family-overpass);
     font-weight: 600;
-    font-size: clamp(1.6rem, 2rem, 2.1rem);
+    font-size: clamp(1.6rem, 2.4rem, 2.6rem);
     text-align: center;
 } 
 
@@ -403,7 +403,7 @@ h4{
     }
 }
 
-/*Laptop*/
+/*desktop*/
 @media (min-width: 1024px) {
 
     body{
@@ -416,8 +416,111 @@ h4{
     header{
         grid-column: 1/-1;
         grid-row: 1;
+        padding: 3.5rem 4rem 4rem 10.5rem;
+    }
+
+    .logo-navigation{
+        justify-content:flex-start;
+    }
+
+    .logo{
+        width: 100%;
+        max-width: 6.5rem;
+    }
+
+    .nav-login{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-list{
+        margin-left: 2rem;
+
+    }
+
+    .nav-item{
+        margin-left: 2rem;
+    }
+
+    .nav-button{
+        background-color: transparent;
+        border: none;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1rem;
+        outline: none;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .nav-button > img{
+        width: 10px;
+        height: 6px;
+        filter: brightness(0) invert(1);
+        margin-left: 0.2rem;
+    }
+
+    .dropdown-menu-show{
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
+    .login-signup{
+        display: flex;
+        align-items: center;
+    }
+
+    .login-signup > a{
+        text-decoration: none;
+    }
+
+    .login-anchor{
+        color: var(--white);
+        font-weight: 700;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .signup-anchor{
+        display: block;
+        width: 8.6rem;
+        height: 3rem;
+        background-color: var(--white);
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--light-red);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .nav-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
+    #hamburger-icon{
+        display: none;
+    }
+
+    .hero {
+        margin-top: 8.7rem;
+    }
+
+    h1{
+        letter-spacing: -1.5px;
+        font-weight: 600;
+    }
+
+    .introduction-paragraph{
+        margin-top: 2.5rem;
+    }
+
     main{
         grid-column: 1/-1;
         grid-row: 2;
@@ -433,6 +536,12 @@ h4{
     .features-section{
         grid-column: 1/-1;
         grid-row: 1;
+        margin-top: 8rem;
+    }
+
+    .features-div{
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .data-center-section{
