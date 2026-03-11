@@ -40,6 +40,10 @@
     align-items: center;
 }
 
+.dropdown-menu-hidden{
+    display: none;
+}
+
 /*Reset*/
 *{
     margin: 0;
@@ -197,7 +201,7 @@ main{
 }
 
 .editor-paragraph{
-    font-size: 1.1rem;
+    font-size: clamp(1.05rem, 1vw, 1.2rem);
     font-weight: 400;
     text-align: center;
     margin-top: 0.9rem;
@@ -410,8 +414,10 @@ h4{
         max-width: 100vw;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 1rem;
+        gap: 1rem;    
     }
+
+    /*header*/
 
     header{
         grid-column: 1/-1;
@@ -528,28 +534,83 @@ h4{
         grid-template-columns: repeat(12, 1fr);
     }
 
-    footer{
-        grid-column: 1/-1;
-        grid-row: 3;
-    }
+    /*Features*/
 
     .features-section{
         grid-column: 1/-1;
         grid-row: 1;
         margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        position: relative;
     }
 
-    .features-div{
-        display: flex;
-        flex-direction: row-reverse;
+    .designed-title{
+        grid-column: 1/-1;
     }
+
+    .features-img{
+        grid-column: 7/-1;
+        position: absolute;
+        top: -12.5%;
+        right: -43%;
+        height: 73.5rem;
+        width: 57.5rem;
+    }
+
+    .features-info{
+        grid-column: 2/7;
+        margin-top: 2.5rem;
+    }
+
+    .editor-title, .content-management-title, .editor-paragraph, .content-management-paragraph{
+        text-align: start;
+    }
+
+    .editor-paragraph{
+        margin-top: 1.5rem;
+        padding: 0 1.1rem;
+    }
+
+    .content-management-info{
+        margin: 5.3rem 0 0 1rem;
+    }
+
+
+    /*Data center section*/
+
 
     .data-center-section{
         grid-column: 1/-1;
         grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+    }
+
+    .data-center-img{
+        grid-column: 2/5;
+    }
+
+    .data-center-img >img{
+        transform: none;
+        max-width: none;
+        left: 0;
+        top: -40%;
+    }
+
+    .data-center-info-div{
+        grid-column: 7/-1;
+        padding: 0;
     }
 
     .characteristics-section{
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+
+        footer{
         grid-column: 1/-1;
         grid-row: 3;
     }
