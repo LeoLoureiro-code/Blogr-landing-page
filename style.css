@@ -178,6 +178,7 @@ main{
     text-align: center;
 } 
 
+/*Make this image more elastic*/
 .editor-picture{
     display: block;
     min-height: 20.3rem;
@@ -245,6 +246,7 @@ main{
     margin-bottom: 5rem;
 }
 
+/*Make this image more elastic*/
 .phone-ilustration{
     position: absolute;
     left: 50%;
@@ -270,7 +272,7 @@ main{
     text-align: center;
     color: var(--white);
     padding: 0 1.8rem;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2vw, 1.1rem);
     font-weight: 300;
     line-height: 1.7rem;
     margin-bottom: 7.2rem;
@@ -597,20 +599,41 @@ h4{
         transform: none;
         max-width: none;
         left: 0;
-        top: -40%;
+        top: -25%;
     }
 
     .data-center-info-div{
         grid-column: 7/-1;
-        padding: 0;
+        padding: 6.5rem 0 1rem 0;
     }
+
+    .data-center-paragraph{
+        margin-bottom: 6rem;
+        text-align: start;
+        padding-right: 10rem;
+        padding-left: 0;
+    }
+
+    .art-infraestructure-title{
+        text-align: start;
+    }
+
+    /*characteristics section*/
 
     .characteristics-section{
         grid-column: 1/-1;
         grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
     }
 
-        footer{
+    .characteristics-picture{
+        width: 43.75rem !important;
+        grid-column: 1/4;
+    }
+    
+    footer{
         grid-column: 1/-1;
         grid-row: 3;
     }
