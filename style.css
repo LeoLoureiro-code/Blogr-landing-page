@@ -419,6 +419,11 @@ h4{
         gap: 1rem;    
     }
 
+    .features-section, .characteristics-section{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     /*header*/
 
     header{
@@ -556,7 +561,7 @@ h4{
         grid-column: 7/-1;
         position: absolute;
         top: -12.5%;
-        right: -43%;
+        right: -50%;
         height: 73.5rem;
         width: 57.5rem;
     }
@@ -626,11 +631,21 @@ h4{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 1rem;
+        margin-top: 15.5rem
     }
 
     .characteristics-picture{
-        width: 43.75rem !important;
-        grid-column: 1/4;
+        width: 43.75rem;
+        grid-column: 1/5;
+    }
+
+    .characteristics-info{
+        grid-column: 5/-1;
+        text-align: start;
+    }
+
+    .open-source-info{
+        
     }
     
     footer{
